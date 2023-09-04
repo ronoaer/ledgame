@@ -1,4 +1,4 @@
 # ledgame
 
-![Framework](https://github.com/ronoaer/ledgame/blob/master/framework.png)
+![Framework](https://github.com/ronoaer/ledgame/blob/main/framework.png)
 Qt/C++
