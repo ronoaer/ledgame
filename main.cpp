@@ -4,7 +4,6 @@
 #include "ledgame.h"
 
 #include <QApplication>
-#include <QDesktopWidget>
 #include <QScreen>
 
 #include <gtest/gtest.h>
@@ -20,10 +19,9 @@ int main(int argc, char *argv[]) {
 
     int ret = 0;
     if (ld != NULL) {
-        QDesktopWidget *desktop = QApplication::desktop();
-
-        int x = desktop->width();
-        int y = desktop->height();
+        QScreen* screen = QApplication::primaryScreen();
+        int x = screen->geometry().width();
+        int y = screen->geometry().height();
 
 
         ld->Show(QPoint(x, y));
